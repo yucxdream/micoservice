@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/micoserver-ribbon/micoserver-ribbon.iml" filepath="$PROJECT_DIR$/micoserver-ribbon/micoserver-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micoservice-client/micoservice-client.iml" filepath="$PROJECT_DIR$/micoservice-client/micoservice-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micoservice-eureka/micoservice-eureka.iml" filepath="$PROJECT_DIR$/micoservice-eureka/micoservice-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micoservice-feign/micoservice-feign.iml" filepath="$PROJECT_DIR$/micoservice-feign/micoservice-feign.iml" />
+    </modules>
+  </component>
+</project>
