@@ -1,0 +1,33 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="orgCode" name="组织机构代码" underline="true"/>
+                            <#input id="cpId" name="经济公司代码" underline="true"/>
+                            <#input id="orgName" name="组织机构名称" underline="true"/>
+                            <#input id="orgNode" name="组织机构节点"/>
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="remark" name="备注" underline="true"/>
+                            <#input id="createTime" name="创建时间" underline="true"/>
+                            <#input id="updateTime" name="更新时间" underline="true"/>
+                            <#input id="type" name="类型(0 保险公司 1 经纪公司)" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="OOrganizationInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="OOrganizationInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/oOrganization/oOrganization_info.js"></script>
+@}

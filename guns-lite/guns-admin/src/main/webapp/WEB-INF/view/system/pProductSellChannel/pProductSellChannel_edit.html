@@ -1,0 +1,46 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="scCode" name="销售渠道代码" value="${item.scCode}" underline="true"/>
+                            <#input id="cpId" name="经济公司代码" value="${item.cpId}" underline="true"/>
+                            <#input id="orgCode" name="组织机构代码" value="${item.orgCode}" underline="true"/>
+                            <#input id="bpId" name="产品代码" value="${item.bpId}" underline="true"/>
+                            <#input id="pcId" name="公司返佣ID" value="${item.pcId}" underline="true"/>
+                            <#input id="price" name="销售价格" value="${item.price}" underline="true"/>
+                            <#input id="isCutPrice" name="是否可降解(0 是 1 不)" value="${item.isCutPrice}" underline="true"/>
+                            <#input id="cutPriceRate" name="降价比例" value="${item.cutPriceRate}" underline="true"/>
+                            <#input id="commType" name="业务分佣方式(0 比例 1定额)" value="${item.commType}" underline="true"/>
+                            <#input id="commQuota" name="定额金额" value="${item.commQuota}" underline="true"/>
+                            <#input id="distType" name="定额分配方式(0 销售 1 上级销售 2 渠道 3公司)" value="${item.distType}" />
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="superSellerRate" name="上级业务员分佣比例" value="${item.superSellerRate}" underline="true"/>
+                            <#input id="superSellerExCommission" name="预计上级业务员佣金" value="${item.superSellerExCommission}" underline="true"/>
+                            <#input id="sellerRate" name="业务员分佣比例" value="${item.sellerRate}" underline="true"/>
+                            <#input id="sellerExCommission" name="预计业务员佣金" value="${item.sellerExCommission}" underline="true"/>
+                            <#input id="orgRate" name="渠道分佣比例" value="${item.orgRate}" underline="true"/>
+                            <#input id="orgExCommission" name="预计渠道佣金" value="${item.orgExCommission}" underline="true"/>
+                            <#input id="companyRate" name="公司分佣比例" value="${item.companyRate}" underline="true"/>
+                            <#input id="orgCompanyCommission" name="预计公司佣金" value="${item.orgCompanyCommission}" underline="true"/>
+                            <#input id="perks" name="额外补贴" value="${item.perks}" underline="true"/>
+                            <#input id="floatPriceFlag" name="浮动价格(0:固定价格 1:浮动价格)" value="${item.floatPriceFlag}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="PProductSellChannelInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="PProductSellChannelInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/pProductSellChannel/pProductSellChannel_info.js"></script>
+@}

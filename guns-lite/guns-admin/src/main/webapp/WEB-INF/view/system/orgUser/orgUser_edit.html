@@ -1,0 +1,53 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="userAccount" name="用户账号" value="${item.userAccount}" underline="true"/>
+                            <#input id="pwd" name="用户密码" value="${item.pwd}" underline="true"/>
+                            <#input id="cpCode" name="所属公司业务员工号" value="${item.cpCode}" underline="true"/>
+                            <#input id="superUserAccount" name="上级用户账号" value="${item.superUserAccount}" underline="true"/>
+                            <#input id="superPwd" name="上级用户名称" value="${item.superPwd}" underline="true"/>
+                            <#input id="superCpCode" name="上级所属公司业务员工号2" value="${item.superCpCode}" underline="true"/>
+                            <#input id="wxOpenId" name="微信OPEN_ID" value="${item.wxOpenId}" underline="true"/>
+                            <#input id="cpId" name="经济公司代码" value="${item.cpId}" underline="true"/>
+                            <#input id="cpName" name="经纪公司名称" value="${item.cpName}" underline="true"/>
+                            <#input id="orgCode" name="组织机构代码" value="${item.orgCode}" underline="true"/>
+                            <#input id="scCode" name="销售渠道代码" value="${item.scCode}" underline="true"/>
+                            <#input id="oBCpId" name="太保组_经济公司代码" value="${item.oBCpId}" underline="true"/>
+                            <#input id="orgName" name="组织机构名称" value="${item.orgName}" underline="true"/>
+                            <#input id="name" name="名称" value="${item.name}" />
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="idNum" name="身份证号" value="${item.idNum}" underline="true"/>
+                            <#input id="phone" name="手机号" value="${item.phone}" underline="true"/>
+                            <#input id="weixin" name="微信号" value="${item.weixin}" underline="true"/>
+                            <#input id="zhifubao" name="支付宝" value="${item.zhifubao}" underline="true"/>
+                            <#input id="isLicence" name="保险牌照(0 有 1 无)" value="${item.isLicence}" underline="true"/>
+                            <#input id="regTime" name="注册时间" value="${item.regTime}" underline="true"/>
+                            <#input id="introduceAccount" name="介绍账号" value="${item.introduceAccount}" underline="true"/>
+                            <#input id="lastLoginTime" name="最后登录时间" value="${item.lastLoginTime}" underline="true"/>
+                            <#input id="createTime" name="创建时间" value="${item.createTime}" underline="true"/>
+                            <#input id="updateTime" name="更新时间" value="${item.updateTime}" underline="true"/>
+                            <#input id="isStaff" name="正式员工(0是1否)" value="${item.isStaff}" underline="true"/>
+                            <#input id="token" name="token" value="${item.token}" underline="true"/>
+                            <#input id="img" name="头像" value="${item.img}" underline="true"/>
+                            <#input id="column28" name="类型(0 太保 1 经纪公司)" value="${item.column28}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="OrgUserInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="OrgUserInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/orgUser/orgUser_info.js"></script>
+@}

@@ -1,0 +1,31 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="bid" name="结算表主键" underline="true"/>
+                            <#input id="balanceSerial" name="结算单号" underline="true"/>
+                            <#input id="price" name="订单总价"/>
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="startTime" name="结算条件开始时间" underline="true"/>
+                            <#input id="endTime" name="结算条件结束时间" underline="true"/>
+                            <#input id="balanceStatus" name="结算状态(0:未结算,1:已结算(应收)2,已结算(已收))" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="FluxInsuranceOrderBalanceInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="FluxInsuranceOrderBalanceInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/fluxInsuranceOrderBalance/fluxInsuranceOrderBalance_info.js"></script>
+@}

@@ -1,0 +1,32 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="activateCode" name="激活码兼主键" value="${item.activateCode}" underline="true"/>
+                            <#input id="scCode" name="销售渠道代码" value="${item.scCode}" underline="true"/>
+                            <#input id="bpId" name="产品代码" value="${item.bpId}" underline="true"/>
+                            <#input id="used" name="是否被使用(0:没有使用，1:被使用)" value="${item.used}" />
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="createTime" name="生成时间" value="${item.createTime}" underline="true"/>
+                            <#input id="disabled" name="是否有效(0:无效，1:有效)" value="${item.disabled}" underline="true"/>
+                            <#input id="useTime" name="使用时间" value="${item.useTime}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="ActivateCodeInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="ActivateCodeInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/activateCode/activateCode_info.js"></script>
+@}

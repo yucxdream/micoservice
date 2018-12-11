@@ -1,0 +1,70 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <label class="col-sm-3 control-label">流量产品明细</label>
+                                    <div class="col-sm-9"></div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="col-sm-3"></div>
+                                    <div class="col-sm-9" underline="true">
+                                        <dl class="dl-horizontal">
+                                            <dt>流量产品名称</dt>
+                                            <dd id="fluxName" class=""></dd>
+                                            <dt>流量产品价格</dt>
+                                            <dd id="fluxPrice"></dd>
+                                            <dt>流量产品明细</dt>
+                                            <dd id="fluxDescription"></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-12">
+                                    <label class="col-sm-3 control-label">保险产品明细</label>
+                                    <div class="col-sm-9"></div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="col-sm-3"></div>
+                                    <div class="col-sm-9" underline="true">
+                                        <dl class="dl-horizontal">
+                                            <dt>保险产品名称</dt>
+                                            <dd id="insuranceName"></dd>
+                                            <dt>保险产品价格</dt>
+                                            <dd id="insurancePrice"></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">产品代码</label>
+                                <div class="col-sm-9" underline="true">
+                                    <select id="bpId" class="form-control">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <#input id="count" name="生成数量"/>
+                            <!--<#input id="bpId" name="产品代码" underline="true"/>-->
+                        </div>
+            </div>
+
+            <div class="row btn-group-m-t text-center">
+                <div class="col-sm-12">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="ActivateCodeInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="ActivateCodeInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/activateCode/activateCode_info.js"></script>
+@}

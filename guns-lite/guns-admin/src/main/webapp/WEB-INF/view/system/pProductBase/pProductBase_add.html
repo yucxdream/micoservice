@@ -1,0 +1,51 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="bpId" name="产品代码" underline="true"/>
+                            <#input id="ptCode" name="类型代码" underline="true"/>
+                            <#input id="psCode" name="来源代码" underline="true"/>
+                            <#input id="sCode" name="源产品代码" underline="true"/>
+                            <#input id="sName" name="源产品名称" underline="true"/>
+                            <#input id="name" name="平台产品名称" underline="true"/>
+                            <#input id="insurePath" name="核保页面路径" underline="true"/>
+                            <#input id="viewPath" name="产品展示路径" underline="true"/>
+                            <#input id="cpId" name="太保组织机构" underline="true"/>
+                            <#input id="pOrder" name="排序" underline="true"/>
+                            <#input id="ntext" name="描述" underline="true"/>
+                            <#input id="listImg" name="列表图片" underline="true"/>
+                            <#input id="titleImg" name="抬头图片"/>
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="introduceImg" name="产品特色图片" underline="true"/>
+                            <#input id="createTime" name="创建时间" underline="true"/>
+                            <#input id="updateTime" name="更新时间" underline="true"/>
+                            <#input id="price" name="价格" underline="true"/>
+                            <#input id="sellPrice" name="销售价格" underline="true"/>
+                            <#input id="maxCommissionRate" name="最高佣金比例" underline="true"/>
+                            <#input id="b2biAccount" name="B2BI账号" underline="true"/>
+                            <#input id="b2biPwd" name="B2BI密码" underline="true"/>
+                            <#input id="isDisplay" name="前台是否显示(0:显示 1 不现实)" underline="true"/>
+                            <#input id="branch" name="分公司" underline="true"/>
+                            <#input id="subbranch" name="中支公司" underline="true"/>
+                            <#input id="productType" name="产品类型(0 单产品 1 组合产)" underline="true"/>
+                            <#input id="derivedProduct" name="派生产品(0 保险公司直接提供 1派生产品)" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="PProductBaseInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="PProductBaseInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/pProductBase/pProductBase_info.js"></script>
+@}

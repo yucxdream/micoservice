@@ -1,0 +1,47 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="cpId" name="组织代码代码" underline="true"/>
+                            <#input id="name" name="组织名称名称" underline="true"/>
+                            <#input id="supCpId" name="上级组织代码" underline="true"/>
+                            <#input id="supName" name="上级组织名称" underline="true"/>
+                            <#input id="address" name="地址" underline="true"/>
+                            <#input id="totalPeople" name="公司人数" underline="true"/>
+                            <#input id="quality" name="经济公司资质" underline="true"/>
+                            <#input id="totalRegister" name="系统注册人数" underline="true"/>
+                            <#input id="legalPerson" name="法人" underline="true"/>
+                            <#input id="technology" name="技术负责人" underline="true"/>
+                            <#input id="technologyPhone" name="技术负责人电话"/>
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="business" name="业务负责人" underline="true"/>
+                            <#input id="businessPhone" name="业务负责人电话" underline="true"/>
+                            <#input id="createTime" name="创建时间" underline="true"/>
+                            <#input id="updateTime" name="更新时间" underline="true"/>
+                            <#input id="type" name="类型(0 保险 1 经纪 2商户)" underline="true"/>
+                            <#input id="merchantCode" name="商户代码" underline="true"/>
+                            <#input id="secretKey" name="登录密码" underline="true"/>
+                            <#input id="publicKey" name="公钥(RS232)" underline="true"/>
+                            <#input id="privateKey" name="私钥(RS232)" underline="true"/>
+                            <#input id="isRecon" name="是否对账（0否  1 T+1对账）" underline="true"/>
+                            <#input id="reconFilePath" name="对账文件生成目录" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="OCompanyInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="OCompanyInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/oCompany/oCompany_info.js"></script>
+@}

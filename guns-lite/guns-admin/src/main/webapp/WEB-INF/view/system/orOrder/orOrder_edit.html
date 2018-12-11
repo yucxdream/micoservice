@@ -1,0 +1,109 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="orderId" name="订单编号" value="${item.orderId}" underline="true"/>
+                            <#input id="serialNumber" name="交易流水号" value="${item.serialNumber}" underline="true"/>
+                            <#input id="applyNo" name="预校验核保单号" value="${item.applyNo}" underline="true"/>
+                            <#input id="bpId" name="产品代码" value="${item.bpId}" underline="true"/>
+                            <#input id="productName" name="产品名称" value="${item.productName}" underline="true"/>
+                            <#input id="sCode" name="源产品代码" value="${item.sCode}" underline="true"/>
+                            <#input id="sName" name="源产品名称" value="${item.sName}" underline="true"/>
+                            <#input id="sellerCpCode" name="销售公司工号" value="${item.sellerCpCode}" underline="true"/>
+                            <#input id="sellerAccount" name="销售账号" value="${item.sellerAccount}" underline="true"/>
+                            <#input id="reconcilCode" name="对账单编号" value="${item.reconcilCode}" underline="true"/>
+                            <#input id="ogId" name="订单组编号" value="${item.ogId}" underline="true"/>
+                            <#input id="cpId" name="经济公司代码" value="${item.cpId}" underline="true"/>
+                            <#input id="productGroupCode" name="产品组代码" value="${item.productGroupCode}" underline="true"/>
+                            <#input id="psCode" name="来源代码" value="${item.psCode}" underline="true"/>
+                            <#input id="psName" name="" value="${item.psName}" underline="true"/>
+                            <#input id="proudctGroupName" name="产品组名称" value="${item.proudctGroupName}" underline="true"/>
+                            <#input id="sellerName" name="销售姓名" value="${item.sellerName}" underline="true"/>
+                            <#input id="sellerRate" name="销售分佣比例" value="${item.sellerRate}" underline="true"/>
+                            <#input id="sellerCommission" name="销售佣金" value="${item.sellerCommission}" underline="true"/>
+                            <#input id="supperSellerCpCode" name="上级销售公司工号" value="${item.supperSellerCpCode}" underline="true"/>
+                            <#input id="supperSellerAccount" name="上级销售账号" value="${item.supperSellerAccount}" underline="true"/>
+                            <#input id="supperSellerName" name="上级销售名称" value="${item.supperSellerName}" underline="true"/>
+                            <#input id="supperSellerRate" name="上级销售分佣比例" value="${item.supperSellerRate}" underline="true"/>
+                            <#input id="supperSellerCommission" name="上级销售佣金" value="${item.supperSellerCommission}" underline="true"/>
+                            <#input id="policyNo" name="保单号" value="${item.policyNo}" underline="true"/>
+                            <#input id="insuredName" name="被保人姓名" value="${item.insuredName}" underline="true"/>
+                            <#input id="insuredId" name="被保人证件号码" value="${item.insuredId}" underline="true"/>
+                            <#input id="insuredIdType" name="被保人证件类型" value="${item.insuredIdType}" underline="true"/>
+                            <#input id="holderName" name="投保人姓名" value="${item.holderName}" underline="true"/>
+                            <#input id="holderId" name="投保人证件号码" value="${item.holderId}" underline="true"/>
+                            <#input id="holderIdType" name="投保人证件类型" value="${item.holderIdType}" underline="true"/>
+                            <#input id="holderPhone" name="投保人手机号" value="${item.holderPhone}" underline="true"/>
+                            <#input id="insuredPhone" name="被保人手机号" value="${item.insuredPhone}" underline="true"/>
+                            <#input id="relation" name="" value="${item.relation}" underline="true"/>
+                            <#input id="policySDate" name="客户传入的保险起期" value="${item.policySDate}" underline="true"/>
+                            <#input id="policySTime" name="保险公司返回的保险起期" value="${item.policySTime}" underline="true"/>
+                            <#input id="policyEDate" name="客户传入的保险止期" value="${item.policyEDate}" underline="true"/>
+                            <#input id="policyETime" name="保险公司返回的保险起期" value="${item.policyETime}" underline="true"/>
+                            <#input id="insureType" name="投保类型(0 新保 1续保)" value="${item.insureType}" underline="true"/>
+                            <#input id="cTime" name="创建时间" value="${item.cTime}" underline="true"/>
+                            <#input id="uTime" name="修改时间" value="${item.uTime}" underline="true"/>
+                            <#input id="payTime" name="支付时间" value="${item.payTime}" />
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="payType" name="支付方式(0 支付宝 1银联  2 微信)" value="${item.payType}" underline="true"/>
+                            <#input id="payFloat" name="支付流水号" value="${item.payFloat}" underline="true"/>
+                            <#input id="payState" name="支付状态(0未支付 1 支付成功 2支付失败)" value="${item.payState}" underline="true"/>
+                            <#input id="payEffectLength" name="有效时长" value="${item.payEffectLength}" underline="true"/>
+                            <#input id="errorMessage" name="" value="${item.errorMessage}" underline="true"/>
+                            <#input id="state" name="状态(0 创建 1核保 2 支付 3 生效 4退保)" value="${item.state}" underline="true"/>
+                            <#input id="type" name="类型(0 保险 1 其他)" value="${item.type}" underline="true"/>
+                            <#input id="price" name="产品定价" value="${item.price}" underline="true"/>
+                            <#input id="sellPrice" name="销售价格" value="${item.sellPrice}" underline="true"/>
+                            <#input id="profit" name="利润" value="${item.profit}" underline="true"/>
+                            <#input id="commissionRate" name="最高佣金比例" value="${item.commissionRate}" underline="true"/>
+                            <#input id="totleCommission" name="总分佣金额" value="${item.totleCommission}" underline="true"/>
+                            <#input id="sellerCpName" name="经济公司名称" value="${item.sellerCpName}" underline="true"/>
+                            <#input id="orgCode" name="组织机构代码" value="${item.orgCode}" underline="true"/>
+                            <#input id="sellerOrgName" name="组织机构名称" value="${item.sellerOrgName}" underline="true"/>
+                            <#input id="isCutPrice" name="是否可降解(0 是 1 不)" value="${item.isCutPrice}" underline="true"/>
+                            <#input id="cutPriceRate" name="降价比例" value="${item.cutPriceRate}" underline="true"/>
+                            <#input id="commType" name="业务分佣方式(0 比例 1定额)" value="${item.commType}" underline="true"/>
+                            <#input id="commQuota" name="定额金额" value="${item.commQuota}" underline="true"/>
+                            <#input id="orgRate" name="渠道分佣比例" value="${item.orgRate}" underline="true"/>
+                            <#input id="orgExCommission" name="实际渠道佣金" value="${item.orgExCommission}" underline="true"/>
+                            <#input id="companyRate" name="公司分佣比例" value="${item.companyRate}" underline="true"/>
+                            <#input id="orgCompanyCommission" name="实际公司佣金" value="${item.orgCompanyCommission}" underline="true"/>
+                            <#input id="perks" name="额外补贴" value="${item.perks}" underline="true"/>
+                            <#input id="reconcil" name="产品方对账结果(0 未对账 1 对账 2失败 )" value="${item.reconcil}" underline="true"/>
+                            <#input id="recTime" name="对账时间" value="${item.recTime}" underline="true"/>
+                            <#input id="merchantCode" name="商户代码" value="${item.merchantCode}" underline="true"/>
+                            <#input id="cpicId" name="太保组织机构" value="${item.cpicId}" underline="true"/>
+                            <#input id="regionCode" name="区域代码" value="${item.regionCode}" underline="true"/>
+                            <#input id="regionName" name="区域名称" value="${item.regionName}" underline="true"/>
+                            <#input id="orgName" name="保险公司组织机构名称" value="${item.orgName}" underline="true"/>
+                            <#input id="mOrder" name="商户订单号" value="${item.mOrder}" underline="true"/>
+                            <#input id="sumInsured" name="保额" value="${item.sumInsured}" underline="true"/>
+                            <#input id="distType" name="" value="${item.distType}" underline="true"/>
+                            <#input id="historyGroupId" name="历史订单组编号(|分割)" value="${item.historyGroupId}" underline="true"/>
+                            <#input id="orderExtraInfoId" name="" value="${item.orderExtraInfoId}" underline="true"/>
+                            <#input id="merchantSerialNumber" name="" value="${item.merchantSerialNumber}" underline="true"/>
+                            <#input id="asynState" name="异步处理状态(0待处理 1已处理 2交易成功 3交易失败)" value="${item.asynState}" underline="true"/>
+                            <#input id="asynHandleTime" name="异步处理时间" value="${item.asynHandleTime}" underline="true"/>
+                            <#input id="asynNoticeState" name="异步回调状态(0未通知 1已通知)" value="${item.asynNoticeState}" underline="true"/>
+                            <#input id="asynNoticeNum" name="异步回调次数(最多5次)" value="${item.asynNoticeNum}" underline="true"/>
+                            <#input id="asynNoticeTime" name="异步回调最后时间" value="${item.asynNoticeTime}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="OrOrderInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="OrOrderInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/orOrder/orOrder_info.js"></script>
+@}
