@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
  */
 @ControllerAdvice
 public class GlobalExceptionHandler {
-
     public static void main(String[] args) {
         System.out.println("master1");
+        System.out.println("dev1");
+        System.out.println("dev2");
     }
 
 }
