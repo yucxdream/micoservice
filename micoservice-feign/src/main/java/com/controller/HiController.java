@@ -28,7 +28,7 @@ public class HiController {
 
     @RequestMapping("/saveUser")
     @ResponseBody
-    public String saveUser(){
+    public void saveUser(){
 
         User user = new User();
         user.setNickname("yu");
