@@ -17,14 +17,6 @@ public class GlobalExceptionHandler {
 
     public static void main(String[] args) {
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("aaaaa");
-            }
-        });
-        new Thread(()-> System.out.println("bbbbb"));
-
         System.out.println("dev1");
         System.out.println("dev2");
 
