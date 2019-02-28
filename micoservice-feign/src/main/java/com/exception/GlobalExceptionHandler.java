@@ -2,6 +2,10 @@ package com.exception;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * @ Author     ：yucx
  * @ Date       ：Created in 上午11:41 2018/12/10
@@ -10,8 +14,23 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
+
     public static void main(String[] args) {
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("aaaaa");
+            }
+        });
+        new Thread(()-> System.out.println("bbbbb"));
+
         System.out.println("dev1");
         System.out.println("dev2");
+
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        list.add("2");
+        Collections.sort(list, (o1, o2) -> o1.compareTo(o2));
     }
 }

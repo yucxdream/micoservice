@@ -10,9 +10,9 @@ spring:
     expose-session-attributes: true
     template-loader-path: classpath:/templates/
   datasource:
-    url: jdbc:mysql://localhost:3306/ssh?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/ygbx?useUnicode=true&characterEncoding=utf-8
     name: root
-    password: root
+    password: admin
     driver-class-name: com.mysql.jdbc.Driver
 eureka:
   client:
@@ -23,3 +23,6 @@ eureka:
 
 
 
+
+logging:
+  config: classpath:config/logback-config.xml

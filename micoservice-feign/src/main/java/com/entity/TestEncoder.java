@@ -10,6 +10,13 @@ public class TestEncoder {
     public static void main(String[] args) {
 
 
+        String s="11111";
+        String s1="111111";
+        /*boolean equals = s.equals(s1)==false;*/
+        if(s.equals(s1)==false){
+
+            System.out.println("2222");
+        }
 
         /*String s1=null;
         Base64 base64 = new Base64();
